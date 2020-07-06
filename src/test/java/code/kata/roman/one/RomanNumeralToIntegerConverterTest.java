@@ -71,30 +71,96 @@ public class RomanNumeralToIntegerConverterTest {
     }
 
     // Test III -> 3
+    @Test
+    public void test_convert_GivenRomanIII_ThenReturn3() {
+        Integer result = converter.convert("III");
+        assertThat(result).isEqualTo(3);
+    }
 
     // Test XX -> 20
+    @Test
+    public void test_convert_GivenRomanXX_ThenReturn20() {
+        Integer result = converter.convert("XX");
+        assertThat(result).isEqualTo(20);
+    }
 
     // Test XXX -> 30
+    @Test
+    public void test_convert_GivenRomanXXX_ThenReturn30() {
+        Integer result = converter.convert("XXX");
+        assertThat(result).isEqualTo(30);
+    }
 
     // Test CC -> 200
+    @Test
+    public void test_convert_GivenRomanCC_ThenReturn200() {
+        Integer result = converter.convert("CC");
+        assertThat(result).isEqualTo(200);
+    }
 
     // Test CCC -> 300
+    @Test
+    public void test_convert_GivenRomanCCC_ThenReturn300() {
+        Integer result = converter.convert("CCC");
+        assertThat(result).isEqualTo(300);
+    }
 
     // Test MM -> 2000
+    @Test
+    public void test_convert_GivenRomanMM_ThenReturn2000() {
+        Integer result = converter.convert("MM");
+        assertThat(result).isEqualTo(2000);
+    }
 
     // Test MMM -> 3000
+    @Test
+    public void test_convert_GivenRomanMMM_ThenReturn3000() {
+        Integer result = converter.convert("MMM");
+        assertThat(result).isEqualTo(300);
+    }
 
     // Test IV -> 4
+    @Test
+    public void test_convert_GivenRomanIV_ThenReturn4() {
+        Integer result = converter.convert("IV");
+        assertThat(result).isEqualTo(4);
+    }
 
     // Test IX -> 9
+    @Test
+    public void test_convert_GivenRomanIX_ThenReturn9() {
+        Integer result = converter.convert("IX");
+        assertThat(result).isEqualTo(9);
+    }
+
 
     // Test XL -> 40
+    @Test
+    public void test_convert_GivenRomanXL_ThenReturn40() {
+        Integer result = converter.convert("XL");
+        assertThat(result).isEqualTo(40);
+    }
 
     // Test XC -> 90
+    @Test
+    public void test_convert_GivenRomanXC_ThenReturn90() {
+        Integer result = converter.convert("XC");
+        assertThat(result).isEqualTo(90);
+    }
 
     // Test CD -> 400
+    @Test
+    public void test_convert_GivenRomanCD_ThenReturn400() {
+        Integer result = converter.convert("CD");
+        assertThat(result).isEqualTo(400);
+    }
 
     // Test CM -> 900
+    @Test
+    public void test_convert_GivenRomanCD_ThenReturn900() {
+        Integer result = converter.convert("CM");
+        assertThat(result).isEqualTo(900);
+    }
 
     // Fehler bei allem ausser I, V, X, L, C, D, M
 }

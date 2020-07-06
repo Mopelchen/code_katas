@@ -2,21 +2,20 @@ package code.kata.roman.one;
 
 import static org.assertj.core.api.Assertions.assertThat;
 
-import org.junit.Ignore;
 import org.junit.Test;
 
 public class RomanNumeralToIntegerConverterTest {
 
     private final RomanNumeralToIntegerConverter converter = new RomanNumeralToIntegerConverter();
 
-    @Ignore
+    
     @Test
     public void test_convert_GivenNull_ThenReturnNull() {
         Integer result = converter.convert(null);
         assertThat(result).isNull();
     }
 
-    @Ignore
+    
     @Test
     public void test_convert_GivenRomanI_ThenReturn1() {
         Integer result = converter.convert("I");
@@ -24,7 +23,7 @@ public class RomanNumeralToIntegerConverterTest {
     }
 
     // Test V -> 5
-    @Ignore
+    
     @Test
     public void test_convert_GivenRomanV_ThenReturn5() {
         Integer result = converter.convert("V");
@@ -32,7 +31,7 @@ public class RomanNumeralToIntegerConverterTest {
     }
 
     // Test X -> 10
-    @Ignore
+    
     @Test
     public void test_convert_GivenRomanX_ThenReturn10() {
         Integer result = converter.convert("X");
@@ -40,7 +39,6 @@ public class RomanNumeralToIntegerConverterTest {
     }
 
     // Test L -> 50
-    @Ignore
     @Test
     public void test_convert_GivenRomanL_ThenReturn50() {
         Integer result = converter.convert("L");
@@ -48,7 +46,7 @@ public class RomanNumeralToIntegerConverterTest {
     }
 
     // Test C -> 100
-    @Ignore
+    
     @Test
     public void test_convert_GivenRomanC_ThenReturn100() {
         Integer result = converter.convert("C");
@@ -56,7 +54,7 @@ public class RomanNumeralToIntegerConverterTest {
     }
 
     // Test D -> 500
-    @Ignore
+    
     @Test
     public void test_convert_GivenRomanD_ThenReturn500() {
         Integer result = converter.convert("D");
@@ -64,7 +62,7 @@ public class RomanNumeralToIntegerConverterTest {
     }
 
     // Test M -> 1000
-    @Ignore
+    
     @Test
     public void test_convert_GivenRomanM_ThenReturn1000() {
         Integer result = converter.convert("M");
@@ -72,7 +70,7 @@ public class RomanNumeralToIntegerConverterTest {
     }
 
     // Test II -> 2
-    @Ignore
+    
     @Test
     public void test_convert_GivenRomanII_ThenReturn2() {
         Integer result = converter.convert("II");
@@ -80,7 +78,7 @@ public class RomanNumeralToIntegerConverterTest {
     }
 
     // Test III -> 3
-    @Ignore
+    
     @Test
     public void test_convert_GivenRomanIII_ThenReturn3() {
         Integer result = converter.convert("III");
@@ -88,7 +86,7 @@ public class RomanNumeralToIntegerConverterTest {
     }
 
     // Test XX -> 20
-    @Ignore
+    
     @Test
     public void test_convert_GivenRomanXX_ThenReturn20() {
         Integer result = converter.convert("XX");
@@ -96,7 +94,7 @@ public class RomanNumeralToIntegerConverterTest {
     }
 
     // Test XXX -> 30
-    @Ignore
+    
     @Test
     public void test_convert_GivenRomanXXX_ThenReturn30() {
         Integer result = converter.convert("XXX");
@@ -104,7 +102,7 @@ public class RomanNumeralToIntegerConverterTest {
     }
 
     // Test CC -> 200
-    @Ignore
+    
     @Test
     public void test_convert_GivenRomanCC_ThenReturn200() {
         Integer result = converter.convert("CC");
@@ -112,7 +110,7 @@ public class RomanNumeralToIntegerConverterTest {
     }
 
     // Test CCC -> 300
-    @Ignore
+    
     @Test
     public void test_convert_GivenRomanCCC_ThenReturn300() {
         Integer result = converter.convert("CCC");
@@ -120,7 +118,7 @@ public class RomanNumeralToIntegerConverterTest {
     }
 
     // Test MM -> 2000
-    @Ignore
+    
     @Test
     public void test_convert_GivenRomanMM_ThenReturn2000() {
         Integer result = converter.convert("MM");
@@ -128,7 +126,7 @@ public class RomanNumeralToIntegerConverterTest {
     }
 
     // Test MMM -> 3000
-    @Ignore
+    
     @Test
     public void test_convert_GivenRomanMMM_ThenReturn3000() {
         Integer result = converter.convert("MMM");
@@ -151,7 +149,7 @@ public class RomanNumeralToIntegerConverterTest {
 
 
     // Test XL -> 40
-    @Ignore
+    
     @Test
     public void test_convert_GivenRomanXL_ThenReturn40() {
         Integer result = converter.convert("XL");
@@ -159,7 +157,7 @@ public class RomanNumeralToIntegerConverterTest {
     }
 
     // Test XC -> 90
-    @Ignore
+    
     @Test
     public void test_convert_GivenRomanXC_ThenReturn90() {
         Integer result = converter.convert("XC");
@@ -167,7 +165,7 @@ public class RomanNumeralToIntegerConverterTest {
     }
 
     // Test CD -> 400
-    @Ignore
+    
     @Test
     public void test_convert_GivenRomanCD_ThenReturn400() {
         Integer result = converter.convert("CD");
@@ -175,7 +173,7 @@ public class RomanNumeralToIntegerConverterTest {
     }
 
     // Test CM -> 900
-    @Ignore
+    
     @Test
     public void test_convert_GivenRomanCD_ThenReturn900() {
         Integer result = converter.convert("CM");

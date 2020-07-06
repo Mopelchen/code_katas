@@ -23,7 +23,6 @@ public class RomanNumeralToIntegerConverterTest {
     }
 
     // Test V -> 5
-    
     @Test
     public void test_convert_GivenRomanV_ThenReturn5() {
         Integer result = converter.convert("V");
